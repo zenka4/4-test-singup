@@ -1,0 +1,116 @@
+body,
+body * {
+margin: 0;
+padding: 0;
+vertical-align: top;
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+}
+    main{
+        display: inline-block;
+        float: left;
+        width: 800px;
+        background-color: green;
+       position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate( -50%, -50%);
+    }
+        .left-column{
+            display: inline-block;
+            float: left;
+            width: 50%;
+            background-color: red;
+            text-align: center;
+            position: absolute;
+            top: 25px;
+            bottom: 25px;
+          
+        }
+            h1{
+
+            }
+            .down-left{
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+
+            }
+
+       .right-column{
+        display: inline-block;
+        float: right;
+        width: 50%;
+        background-color: royalblue;
+        padding: 40px;
+        position: relative;
+        background-image: url(./osen.jpg);
+        background-size: cover;
+        color: aqua;
+       }   
+            .form{
+                display: inline-block;
+                float: left;
+                background: rgba( 0,0,0,.5);
+                border-radius: 7px;
+            }
+            .form-row{
+                padding: 10px;
+            }
+            label{
+                    width: 100%;
+            }
+            input{
+                    width: 100%;
+                    border: none;
+                    background: transparent;
+                    border-bottom: 1px solid aqua;
+                    outline: none;
+                    color: aqua;
+            }
+            .radioo{
+                width: 100%;
+                display: inline-block;
+            }
+            .radioo input{ width: 20px;}
+            @media (max-width: 800px) {
+                main{
+                    width: 600px;
+                }
+            }
+            @media (max-width: 600px) {
+                main{
+                    width: 400px;
+                }
+                .left-column{
+                    width: 30%;
+                }
+                .right-column{
+                    width: 70%;
+                }
+            }
+            @media (max-width: 400px) {
+                main{
+                    width: 300px;
+                }
+                .left-column{
+                    width: 100%;
+                    position: static;
+
+                }
+                .down-left{
+                    position: static;
+                }
+                .right-column{
+                    width: 100%;
+                }
+            }
+
+            
